@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *palavraAleatoria;
 @property (weak, nonatomic) IBOutlet UIStepper *numSilabas;
 
+
+
 @end
 
 @implementation GPAViewController
@@ -27,11 +29,11 @@
 {
     if (event.subtype == UIEventSubtypeMotionShake)
     {
+       
+        NSArray *palavras1 = @[@"Hulk", @"Oi", @"Tchau", @"Foo", @"Bar"];
+        NSArray *palavras2 = @[@"Jiban", @"Batman", @"Copa", @"Maçã", @"Mundo"];
+        NSArray *palavras3 = @[@"Jaspion", @"Turista", @"", @"Código", @"Cadeira"];
         
-        int validarSilabas = [self.silabas.text intValue] ;
-        NSArray *palavras1 = @[@"Olá", @"Oi", @"Tchau", @"Foo", @"Bar"];
-        NSArray *palavras2 = @[@"Mesa", @"Aula", @"Copa", @"Maçã", @"Mundo"];
-        NSArray *palavras3 = @[@"Calorão", @"Turista", @"Programar", @"Código", @"Cadeira"];
         if ([self.silabas.text isEqualToString:@""])
             self.palavraAleatoria.text = @"Informe o número de sílabas entre 1 e 3!";
         if ([self.silabas.text isEqualToString:@"1"])
@@ -40,6 +42,8 @@
             self.palavraAleatoria.text = [palavras2 objectAtIndex:rand() % 5];
         if ([self.silabas.text isEqualToString:@"3"])
             self.palavraAleatoria.text = [palavras3 objectAtIndex:rand() % 5];
+        
+        int validarSilabas = [self.silabas.text intValue] ;
         if (validarSilabas > 3)
             self.palavraAleatoria.text = @"Atenção, você deve informar o número de sílabas entre 1 e 3!";
         
@@ -62,18 +66,20 @@
 //    NSString *palavra = [dic randomWord];
 //    NSLog(@"%@", palavra);
     
-    int validarSilabas = [self.silabas.text intValue] ;
     NSArray *palavras1 = @[@"Olá", @"Oi", @"Tchau", @"Foo", @"Bar"];
-    NSArray *palavras2 = @[@"Babá", @"Bebê", @"Foobar", @"Pato", @"Linha"];
-    NSArray *palavras3 = @[@"Tubarão", @"Turista", @"Programar", @"Código"];
+    NSArray *palavras2 = @[@"Mesa", @"Aula", @"Copa", @"Maçã", @"Mundo"];
+    NSArray *palavras3 = @[@"Calorão", @"Turista", @"Programar", @"Código", @"Cadeira"];
+    
     if ([self.silabas.text isEqualToString:@""])
         self.palavraAleatoria.text = @"Informe o número de sílabas entre 1 e 3!";
     if ([self.silabas.text isEqualToString:@"1"])
-        self.palavraAleatoria.text = [palavras1 objectAtIndex:rand() % 2];
+        self.palavraAleatoria.text = [palavras1 objectAtIndex:rand() % 5];
     if ([self.silabas.text isEqualToString:@"2"])
-        self.palavraAleatoria.text = [palavras2 objectAtIndex:rand() % 2];
+        self.palavraAleatoria.text = [palavras2 objectAtIndex:rand() % 5];
     if ([self.silabas.text isEqualToString:@"3"])
-        self.palavraAleatoria.text = [palavras3 objectAtIndex:rand() % 2];
+        self.palavraAleatoria.text = [palavras3 objectAtIndex:rand() % 5];
+    
+    int validarSilabas = [self.silabas.text intValue] ;
     if (validarSilabas > 3)
         self.palavraAleatoria.text = @"Atenção, você deve informar o número de sílabas entre 1 e 3!";
     
@@ -81,8 +87,6 @@
     [self.view endEditing:YES];
 
 }
-
-
 
 - (void)viewDidLoad
 {
