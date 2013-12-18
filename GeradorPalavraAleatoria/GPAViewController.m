@@ -10,20 +10,15 @@
 #import "Lexicontext.h"
 
 @interface GPAViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *silabas;
 @property (weak, nonatomic) IBOutlet UIButton *gerarPalavra;
 @property (weak, nonatomic) IBOutlet UILabel *palavraAleatoria;
 @property (weak, nonatomic) IBOutlet UIStepper *numSilabas;
 
-
-
 @end
 
 @implementation GPAViewController
-
-- (IBAction)controleSilabas:(UIStepper *)sender
-{
-}
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
@@ -61,10 +56,6 @@
 }
 
 - (IBAction)gerarPalavraAleatoria:(UIButton *)sender {
-    
-//    Lexicontext *dic = [Lexicontext sharedDictionary];
-//    NSString *palavra = [dic randomWord];
-//    NSLog(@"%@", palavra);
     
     NSArray *palavras1 = @[@"Olá", @"Oi", @"Tchau", @"Foo", @"Bar"];
     NSArray *palavras2 = @[@"Mesa", @"Aula", @"Copa", @"Maçã", @"Mundo"];
