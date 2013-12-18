@@ -21,6 +21,7 @@
 		B1231DFE1860755A00AB8D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DE01860755A00AB8D81 /* UIKit.framework */; };
 		B1231E061860755A00AB8D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1231E041860755A00AB8D81 /* InfoPlist.strings */; };
 		B1231E081860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231E071860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m */; };
+		B1231E16186084AC00AB8D81 /* GPALexicontext.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231E15186084AC00AB8D81 /* GPALexicontext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,9 @@
 		B1231E031860755A00AB8D81 /* GeradorPalavraAleatoriaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeradorPalavraAleatoriaTests-Info.plist"; sourceTree = "<group>"; };
 		B1231E051860755A00AB8D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1231E071860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeradorPalavraAleatoriaTests.m; sourceTree = "<group>"; };
+		B1231E1318607F6600AB8D81 /* Lexicontext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Lexicontext.h; path = "../../../../../Downloads/lexicontext-1.2-trial/Lexicontext.h"; sourceTree = "<group>"; };
+		B1231E14186084AC00AB8D81 /* GPALexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPALexicontext.h; sourceTree = "<group>"; };
+		B1231E15186084AC00AB8D81 /* GPALexicontext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPALexicontext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		B1231DE21860755A00AB8D81 /* GeradorPalavraAleatoria */ = {
 			isa = PBXGroup;
 			children = (
+				B1231E1318607F6600AB8D81 /* Lexicontext.h */,
 				B1231DEB1860755A00AB8D81 /* GPAAppDelegate.h */,
 				B1231DEC1860755A00AB8D81 /* GPAAppDelegate.m */,
 				B1231DEE1860755A00AB8D81 /* Main.storyboard */,
@@ -130,6 +135,8 @@
 				B1231DE51860755A00AB8D81 /* InfoPlist.strings */,
 				B1231DE81860755A00AB8D81 /* main.m */,
 				B1231DEA1860755A00AB8D81 /* GeradorPalavraAleatoria-Prefix.pch */,
+				B1231E14186084AC00AB8D81 /* GPALexicontext.h */,
+				B1231E15186084AC00AB8D81 /* GPALexicontext.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 			files = (
 				B1231DF31860755A00AB8D81 /* GPAViewController.m in Sources */,
 				B1231DE91860755A00AB8D81 /* main.m in Sources */,
+				B1231E16186084AC00AB8D81 /* GPALexicontext.m in Sources */,
 				B1231DED1860755A00AB8D81 /* GPAAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
